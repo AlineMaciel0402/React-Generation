@@ -1,13 +1,25 @@
-import './App.css'
-import Home from "./paginas/home/Home"
+import './App.css';
+import Home from './paginas/home/Home';
+import Navbar from './components/navbar/navbar';
+import Footer from './components/footer/footer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './paginas/login/login';
 
 function App() {
-  return(
-  <Home
-  title="Componente Home" 
-  description="Este é um componente Home que recebe props."/>
-  )
+  return (
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <div className='min-h-[80vh]'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/home" element={<Home />} />
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
+    </>
+);
 }
-
-
-export default App
+export default App;
