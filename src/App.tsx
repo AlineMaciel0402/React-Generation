@@ -3,7 +3,9 @@ import Home from "./paginas/home/Home"
 
 function App() {
   return(
-  <Home />
+  <Home
+  title="Componente Home" 
+  description="Este é um componente Home que recebe props."/>
   )
 }
 
