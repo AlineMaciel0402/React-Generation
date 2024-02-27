@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 
 import Navbar from './components/navbar/navbar';
@@ -12,8 +11,9 @@ import ListaTemas from './components/temas/listaTemas/ListaTemas';
 import FormularioTema from './components/temas/formularioTema/FormularioTema';
 import DeletarTema from './components/temas/deletarTemas/DeletarTema';
 import ListaPostagens from './components/postagem/listaPostagem/ListaPostagens';
-import FormularioPostagem from './components/postagem/formularioPostagem/FormularioPostagem';
+import FormularioPostagem from './components/postagem/listaPostagem/ListaPostagens';
 import DeletarPostagem from './components/postagem/deletarPostagem/DeletarPostagem';
+import Perfil from './paginas/perfil/Perfil';
 
 
 function App() {
@@ -36,6 +36,7 @@ function App() {
               <Route path="/cadastroPostagem" element={<FormularioPostagem />} />
               <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
               <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
+              <Route path="/perfil" element={<Perfil />} />
             </Routes>
           </div>
           <Footer />
