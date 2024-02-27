@@ -11,7 +11,7 @@ import ListaTemas from './components/temas/listaTemas/ListaTemas';
 import FormularioTema from './components/temas/formularioTema/FormularioTema';
 import DeletarTema from './components/temas/deletarTemas/DeletarTema';
 import ListaPostagens from './components/postagem/listaPostagem/ListaPostagens';
-import FormularioPostagem from './components/postagem/listaPostagem/ListaPostagens';
+import FormularioPostagem from './components/postagem/formularioPostagem/FormularioPostagem';
 import DeletarPostagem from './components/postagem/deletarPostagem/DeletarPostagem';
 import Perfil from './paginas/perfil/Perfil';
 
