@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
-import './Login.css';
+import './Logar.css';
 
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ import { AuthContext } from '../../contexts/AuthContext';
 import UsuarioLogin from '../../models/UsuarioLogin';
 import { RotatingLines } from 'react-loader-spinner';
 
-function Login() {
+function Logar() {
   let navigate = useNavigate();
 
   const [usuarioLogin, setUsuarioLogin] = useState<UsuarioLogin>(
@@ -91,4 +91,4 @@ function login(e: ChangeEvent<HTMLFormElement>) {
   );
 }
 
-export default Login;
+export default Logar;

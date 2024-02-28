@@ -14,7 +14,7 @@ import ListaPostagens from './components/postagem/listaPostagem/ListaPostagens';
 import FormularioPostagem from './components/postagem/formularioPostagem/FormularioPostagem';
 import Perfil from './paginas/perfil/Perfil';
 import DeletarPostagem from './components/postagem/deletarPostagem/DeletarPostagem';
-import Login from './paginas/login/Login';
+import Logar from './paginas/login/Logar';
 
 function App() {
   
@@ -26,8 +26,8 @@ function App() {
         <Navbar />
           <div className='min-h-[80vh]'>
             <Routes>
-              <Route path="/" element={<Login />} />
-              <Route path="/login" element={<Login />} />
+              <Route path="/" element={<Logar />} />
+              <Route path="/login" element={<Logar />} />
               <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/home" element={<Home />} />
               <Route path="/temas" element={<ListaTemas />} />
