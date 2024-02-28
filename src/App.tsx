@@ -1,6 +1,5 @@
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
-import Login from './paginas/login/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import { ToastContainer } from 'react-toastify';
@@ -13,9 +12,9 @@ import FormularioTema from './components/temas/formularioTema/FormularioTema';
 import DeletarTema from './components/temas/deletarTemas/DeletarTema';
 import ListaPostagens from './components/postagem/listaPostagem/ListaPostagens';
 import FormularioPostagem from './components/postagem/formularioPostagem/FormularioPostagem';
-
 import Perfil from './paginas/perfil/Perfil';
 import DeletarPostagem from './components/postagem/deletarPostagem/DeletarPostagem';
+import Login from './paginas/login/Login';
 
 function App() {
   
